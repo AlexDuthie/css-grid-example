@@ -17,11 +17,15 @@ header, header a{
     margin: 15px auto;
 }
 
-#title {
+.nav-left {
     float: left;
     display: flex;
     justify-content: center;
     font-weight: 800;
+}
+
+#nav-title {
+    text-decoration: underline;
 }
 
 nav {
@@ -67,10 +71,19 @@ nav a:hover::before {
     width: 100%;
 }
 
-#get-started a {
+#get-started-btn a {
     background-color: black;
     padding: 15px;
     border-radius: 50px/50px;
     color: #fdfbf7;
     font-weight: 100;
+    content: none;
+}
+
+#get-started-btn a::before {
+    content: none;
+}
+
+#get-started-btn a:hover {
+    color:rgb(0, 225, 255);
 }
