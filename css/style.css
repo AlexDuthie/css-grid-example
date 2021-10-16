@@ -14,13 +14,13 @@ header, header a{
 
 .container {
     width: 100%;
+    height: 120px;
     margin: 15px auto;
 }
 
 .nav-left {
+    width: auto;
     float: left;
-    display: flex;
-    justify-content: center;
     font-weight: 800;
 }
 
@@ -29,6 +29,7 @@ header, header a{
 }
 
 nav {
+    width: auto;
     float: right;
 }
 
@@ -86,4 +87,43 @@ nav a:hover::before {
 
 #get-started-btn a:hover {
     color:rgb(0, 225, 255);
+}
+
+#featured {
+    width: 80%;
+    margin-left: 10%;
+    background-color: blue;
+    height: 300px;
+    border-radius: 20px/20px;
+}
+
+#featured-left {
+    border-radius: 20px/20px;
+    height: 100%;
+    width: 58%;
+    background-color: rgb(0, 225, 255);
+    float: left;
+}
+
+#featured-right {
+    float: right;
+    border-radius: 20px/20px;
+    height: 100%;
+    width: 40%;
+    background-color:rgb(72, 255, 0);
+    display: inline;
+    justify-content: space-between;
+}
+
+#featured-right-top {
+    border-radius: 20px/20px;
+    width: 100%;
+    height: 55%;
+    background: purple;
+}
+
+#featured-right-bottom {
+    height: 40%;
+    background-color: seagreen;
+    border-radius: 20px/20px;
 }
