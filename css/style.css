@@ -105,7 +105,7 @@ nav a:hover::before {
 
 .featured {
     padding: 10%;
-    height: 100vh;
+    height: 120vh;
     padding-top: 0;
 }
 
@@ -150,9 +150,17 @@ nav a:hover::before {
     grid-row: span 1;
     grid-column: span 1;
     background-color: #f1ece1;
-}
-
-.see-all a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px/25px;
     text-decoration: none;
     color: black;
+}
+
+.see-all:hover {
+    color: black;
+    cursor: pointer;
+    background: radial-gradient(#f1ece1, #bdbdbd);
 }
