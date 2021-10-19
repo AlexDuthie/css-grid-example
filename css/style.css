@@ -153,6 +153,8 @@ nav a:hover {
     content: 'and Awesome Pics';
 }
 
+/* Featured */
+
 .featured {
     padding: 10%;
     height: 120vh;
@@ -175,7 +177,6 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .left {
@@ -213,4 +214,61 @@ nav a:hover {
     color: black;
     cursor: pointer;
     background: radial-gradient(#f1ece1, #bdbdbd);
+}
+
+.left img {
+    height: 350px;
+    width: 350px;
+}
+
+.right-top img, .right-bottom img {
+    height: 150px;
+    width: 150px;
+}
+
+@media screen and (max-width: 900px) {
+    .home-heading {
+        text-align: center;
+    }
+
+    .featured-images {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .left {
+        grid-row: span 1;
+        grid-column: span 1;
+        background: linear-gradient(to right, #f9bbba, #f5b0b0);
+    }
+    
+    .right-top {
+        grid-row: span 1;
+        grid-column: span 1;
+        background: radial-gradient(#65cac7, #34a09b);
+    }
+    
+    .right-bottom {
+        grid-row: span 1;
+        grid-column: span 1;
+        background: linear-gradient(to right, #e7ba00, #f7d508)
+    }
+    
+    .see-all {
+        grid-row: span 1;
+        grid-column: span 1;
+        background-color: #f1ece1;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px/25px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .left img {
+        height: 150px;
+        width: 150px;
+    }
 }
