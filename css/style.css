@@ -179,29 +179,42 @@ nav a:hover {
     align-items: center;
 }
 
+:root {
+    --left-bg: radial-gradient(#f9bbba, #f5b0b0);
+    --right-top-bg: radial-gradient(#4baca8, #34a09b);
+    --right-bottom-bg: radial-gradient(#e7ba00, #f7d508);
+}
+
+.featured-box:hover {
+    --left-bg: radial-gradient(rgb(212, 79, 76), #f5b0b0);
+    --right-top-bg: radial-gradient(#248581, #34a09b);
+    --right-bottom-bg: radial-gradient(#e79600, #f7d508);
+    cursor: pointer;
+}
+
 .left {
     grid-row: span 2;
     grid-column: span 4;
-    background: linear-gradient(to right, #f9bbba, #f5b0b0);
+    background: var(--left-bg);
 }
 
 .right-top {
     grid-row: span 1;
     grid-column: span 3;
-    background: radial-gradient(#65cac7, #34a09b);
+    background: var(--right-top-bg);
 }
 
 .right-bottom {
     grid-row: span 1;
     grid-column: span 2;
-    background: linear-gradient(to right, #e7ba00, #f7d508)
+    background: var(--right-bottom-bg);
 }
 
 .see-all {
     grid-row: span 1;
     grid-column: span 1;
-    background-color: #f1ece1;
     position: relative;
+    background-color: #f1ece1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -213,7 +226,7 @@ nav a:hover {
 .see-all:hover {
     color: black;
     cursor: pointer;
-    background: radial-gradient(#f1ece1, #bdbdbd);
+    background: radial-gradient(#dfdfdf, #f1ece1);
 }
 
 .left img {
