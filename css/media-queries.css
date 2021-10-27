@@ -1,0 +1,30 @@
+/* NAVBAR */
+
+@media screen and (max-width: 900px) {
+    .navbar {
+        background-color: rgb(106, 106, 250);
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .small-menu {
+        display: block;
+    }
+}
+
+/* HOME */
+
+@media screen and (max-width: 900px) {
+    .home-heading {
+        text-align: center;
+    }
+
+    .featured-images {
+        display: grid;
+        height: 80%;
+        gap: 20px;
+        grid-auto-flow: row;
+    }
+}
