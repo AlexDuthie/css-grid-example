@@ -1,11 +1,7 @@
 # Stock Photo Market
 
-## Table of Contents
-
-1. []()
-
 ## Screenshots
 
-![]()
+![Desktop](images/screenshots/desktop.jpg)
 
-## Setup
+![Desktop](images/screenshots/mobile.jpg)
